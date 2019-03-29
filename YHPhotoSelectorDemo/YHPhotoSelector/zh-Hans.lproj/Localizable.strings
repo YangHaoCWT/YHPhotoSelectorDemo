@@ -1,0 +1,20 @@
+/*
+ Localizable.strings
+ YHPhotoSelectorDemo
+
+ Created by Mac on 2019/3/26.
+ Copyright © 2019 YangHao. All rights reserved.
+ */
+"YHPhotoSelector" = "YHPhotoSelector";
+"Custom style" = "自定义样式";
+"Custom album select" = "自定义相册选择";
+"Photo album" = "相册";
+"Preview" = "预览";
+"Complete" = "完成";
+"Cancel" = "取消";
+"Maximum number of options" = "已达到选择数量上限";
+"ok" = "好";
+"Unable to access album" = "无法访问相册";
+"Please allow to access your album" = "请在设置-隐私-相册中允许访问相册";
+"Setting" = "设置";
+"Preview" = "预览";

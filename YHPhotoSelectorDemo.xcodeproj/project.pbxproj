@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046628BF224C63490053FB8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628BE224C63490053FB8F /* AppDelegate.swift */; };
+		046628C1224C63490053FB8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628C0224C63490053FB8F /* ViewController.swift */; };
+		046628C4224C63490053FB8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046628C2224C63490053FB8F /* Main.storyboard */; };
+		046628C6224C634A0053FB8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046628C5224C634A0053FB8F /* Assets.xcassets */; };
+		046628C9224C634A0053FB8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046628C7224C634A0053FB8F /* LaunchScreen.storyboard */; };
+		046628D4224C634A0053FB8F /* YHPhotoSelectorDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628D3224C634A0053FB8F /* YHPhotoSelectorDemoTests.swift */; };
+		046628DF224C634A0053FB8F /* YHPhotoSelectorDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628DE224C634A0053FB8F /* YHPhotoSelectorDemoUITests.swift */; };
+		046628F4224C63A50053FB8F /* YHSelectConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628ED224C63A50053FB8F /* YHSelectConfig.swift */; };
+		046628F5224C63A50053FB8F /* YHGroupingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628EE224C63A50053FB8F /* YHGroupingCell.swift */; };
+		046628F6224C63A50053FB8F /* YHPreviewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628EF224C63A50053FB8F /* YHPreviewCollectionCell.swift */; };
+		046628F7224C63A50053FB8F /* YHPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F0224C63A50053FB8F /* YHPickerViewController.swift */; };
+		046628F8224C63A50053FB8F /* YHPickerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F1224C63A50053FB8F /* YHPickerCollectionCell.swift */; };
+		046628F9224C63A50053FB8F /* YHGroupingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F2224C63A50053FB8F /* YHGroupingListController.swift */; };
+		046628FA224C63A50053FB8F /* YHPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F3224C63A50053FB8F /* YHPreviewController.swift */; };
+		046628FF224C64A60053FB8F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04662901224C64A60053FB8F /* Localizable.strings */; };
+		04662904224C6DFA0053FB8F /* YHPhotoSelector.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		046628D0224C634A0053FB8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046628B3224C63490053FB8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046628BA224C63490053FB8F;
+			remoteInfo = YHPhotoSelectorDemo;
+		};
+		046628DB224C634A0053FB8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046628B3224C63490053FB8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046628BA224C63490053FB8F;
+			remoteInfo = YHPhotoSelectorDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		046628BB224C63490053FB8F /* YHPhotoSelectorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHPhotoSelectorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		046628BE224C63490053FB8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		046628C0224C63490053FB8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		046628C3224C63490053FB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		046628C5224C634A0053FB8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		046628C8224C634A0053FB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		046628CA224C634A0053FB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046628CF224C634A0053FB8F /* YHPhotoSelectorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHPhotoSelectorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046628D3224C634A0053FB8F /* YHPhotoSelectorDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHPhotoSelectorDemoTests.swift; sourceTree = "<group>"; };
+		046628D5224C634A0053FB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046628DA224C634A0053FB8F /* YHPhotoSelectorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHPhotoSelectorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046628DE224C634A0053FB8F /* YHPhotoSelectorDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHPhotoSelectorDemoUITests.swift; sourceTree = "<group>"; };
+		046628E0224C634A0053FB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046628ED224C63A50053FB8F /* YHSelectConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHSelectConfig.swift; sourceTree = "<group>"; };
+		046628EE224C63A50053FB8F /* YHGroupingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHGroupingCell.swift; sourceTree = "<group>"; };
+		046628EF224C63A50053FB8F /* YHPreviewCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPreviewCollectionCell.swift; sourceTree = "<group>"; };
+		046628F0224C63A50053FB8F /* YHPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPickerViewController.swift; sourceTree = "<group>"; };
+		046628F1224C63A50053FB8F /* YHPickerCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPickerCollectionCell.swift; sourceTree = "<group>"; };
+		046628F2224C63A50053FB8F /* YHGroupingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHGroupingListController.swift; sourceTree = "<group>"; };
+		046628F3224C63A50053FB8F /* YHPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPreviewController.swift; sourceTree = "<group>"; };
+		046628FB224C64410053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		046628FC224C64410053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		04662900224C64A60053FB8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04662902224C64A80053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YHPhotoSelector.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		046628B8224C63490053FB8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046628CC224C634A0053FB8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046628D7224C634A0053FB8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		046628B2224C63490053FB8F = {
+			isa = PBXGroup;
+			children = (
+				046628BD224C63490053FB8F /* YHPhotoSelectorDemo */,
+				046628D2224C634A0053FB8F /* YHPhotoSelectorDemoTests */,
+				046628DD224C634A0053FB8F /* YHPhotoSelectorDemoUITests */,
+				046628BC224C63490053FB8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		046628BC224C63490053FB8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				046628BB224C63490053FB8F /* YHPhotoSelectorDemo.app */,
+				046628CF224C634A0053FB8F /* YHPhotoSelectorDemoTests.xctest */,
+				046628DA224C634A0053FB8F /* YHPhotoSelectorDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		046628BD224C63490053FB8F /* YHPhotoSelectorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				046628BE224C63490053FB8F /* AppDelegate.swift */,
+				046628C0224C63490053FB8F /* ViewController.swift */,
+				046628EC224C63A50053FB8F /* YHPhotoSelector */,
+				046628C2224C63490053FB8F /* Main.storyboard */,
+				046628C5224C634A0053FB8F /* Assets.xcassets */,
+				046628C7224C634A0053FB8F /* LaunchScreen.storyboard */,
+				046628CA224C634A0053FB8F /* Info.plist */,
+			);
+			path = YHPhotoSelectorDemo;
+			sourceTree = "<group>";
+		};
+		046628D2224C634A0053FB8F /* YHPhotoSelectorDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				046628D3224C634A0053FB8F /* YHPhotoSelectorDemoTests.swift */,
+				046628D5224C634A0053FB8F /* Info.plist */,
+			);
+			path = YHPhotoSelectorDemoTests;
+			sourceTree = "<group>";
+		};
+		046628DD224C634A0053FB8F /* YHPhotoSelectorDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				046628DE224C634A0053FB8F /* YHPhotoSelectorDemoUITests.swift */,
+				046628E0224C634A0053FB8F /* Info.plist */,
+			);
+			path = YHPhotoSelectorDemoUITests;
+			sourceTree = "<group>";
+		};
+		046628EC224C63A50053FB8F /* YHPhotoSelector */ = {
+			isa = PBXGroup;
+			children = (
+				046628ED224C63A50053FB8F /* YHSelectConfig.swift */,
+				046628F2224C63A50053FB8F /* YHGroupingListController.swift */,
+				046628EE224C63A50053FB8F /* YHGroupingCell.swift */,
+				046628F0224C63A50053FB8F /* YHPickerViewController.swift */,
+				046628F1224C63A50053FB8F /* YHPickerCollectionCell.swift */,
+				046628F3224C63A50053FB8F /* YHPreviewController.swift */,
+				046628EF224C63A50053FB8F /* YHPreviewCollectionCell.swift */,
+				04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */,
+				04662901224C64A60053FB8F /* Localizable.strings */,
+			);
+			path = YHPhotoSelector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		046628BA224C63490053FB8F /* YHPhotoSelectorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046628E3224C634A0053FB8F /* Build configuration list for PBXNativeTarget "YHPhotoSelectorDemo" */;
+			buildPhases = (
+				046628B7224C63490053FB8F /* Sources */,
+				046628B8224C63490053FB8F /* Frameworks */,
+				046628B9224C63490053FB8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YHPhotoSelectorDemo;
+			productName = YHPhotoSelectorDemo;
+			productReference = 046628BB224C63490053FB8F /* YHPhotoSelectorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		046628CE224C634A0053FB8F /* YHPhotoSelectorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046628E6224C634A0053FB8F /* Build configuration list for PBXNativeTarget "YHPhotoSelectorDemoTests" */;
+			buildPhases = (
+				046628CB224C634A0053FB8F /* Sources */,
+				046628CC224C634A0053FB8F /* Frameworks */,
+				046628CD224C634A0053FB8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046628D1224C634A0053FB8F /* PBXTargetDependency */,
+			);
+			name = YHPhotoSelectorDemoTests;
+			productName = YHPhotoSelectorDemoTests;
+			productReference = 046628CF224C634A0053FB8F /* YHPhotoSelectorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		046628D9224C634A0053FB8F /* YHPhotoSelectorDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046628E9224C634A0053FB8F /* Build configuration list for PBXNativeTarget "YHPhotoSelectorDemoUITests" */;
+			buildPhases = (
+				046628D6224C634A0053FB8F /* Sources */,
+				046628D7224C634A0053FB8F /* Frameworks */,
+				046628D8224C634A0053FB8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046628DC224C634A0053FB8F /* PBXTargetDependency */,
+			);
+			name = YHPhotoSelectorDemoUITests;
+			productName = YHPhotoSelectorDemoUITests;
+			productReference = 046628DA224C634A0053FB8F /* YHPhotoSelectorDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		046628B3224C63490053FB8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = YangHao;
+				TargetAttributes = {
+					046628BA224C63490053FB8F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					046628CE224C634A0053FB8F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 046628BA224C63490053FB8F;
+					};
+					046628D9224C634A0053FB8F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 046628BA224C63490053FB8F;
+					};
+				};
+			};
+			buildConfigurationList = 046628B6224C63490053FB8F /* Build configuration list for PBXProject "YHPhotoSelectorDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 046628B2224C63490053FB8F;
+			productRefGroup = 046628BC224C63490053FB8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				046628BA224C63490053FB8F /* YHPhotoSelectorDemo */,
+				046628CE224C634A0053FB8F /* YHPhotoSelectorDemoTests */,
+				046628D9224C634A0053FB8F /* YHPhotoSelectorDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		046628B9224C63490053FB8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046628C9224C634A0053FB8F /* LaunchScreen.storyboard in Resources */,
+				04662904224C6DFA0053FB8F /* YHPhotoSelector.bundle in Resources */,
+				046628FF224C64A60053FB8F /* Localizable.strings in Resources */,
+				046628C6224C634A0053FB8F /* Assets.xcassets in Resources */,
+				046628C4224C63490053FB8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046628CD224C634A0053FB8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046628D8224C634A0053FB8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046628B7224C63490053FB8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046628F4224C63A50053FB8F /* YHSelectConfig.swift in Sources */,
+				046628F7224C63A50053FB8F /* YHPickerViewController.swift in Sources */,
+				046628C1224C63490053FB8F /* ViewController.swift in Sources */,
+				046628F8224C63A50053FB8F /* YHPickerCollectionCell.swift in Sources */,
+				046628F6224C63A50053FB8F /* YHPreviewCollectionCell.swift in Sources */,
+				046628F9224C63A50053FB8F /* YHGroupingListController.swift in Sources */,
+				046628BF224C63490053FB8F /* AppDelegate.swift in Sources */,
+				046628FA224C63A50053FB8F /* YHPreviewController.swift in Sources */,
+				046628F5224C63A50053FB8F /* YHGroupingCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046628CB224C634A0053FB8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046628D4224C634A0053FB8F /* YHPhotoSelectorDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046628D6224C634A0053FB8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046628DF224C634A0053FB8F /* YHPhotoSelectorDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		046628D1224C634A0053FB8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046628BA224C63490053FB8F /* YHPhotoSelectorDemo */;
+			targetProxy = 046628D0224C634A0053FB8F /* PBXContainerItemProxy */;
+		};
+		046628DC224C634A0053FB8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046628BA224C63490053FB8F /* YHPhotoSelectorDemo */;
+			targetProxy = 046628DB224C634A0053FB8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		046628C2224C63490053FB8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046628C3224C63490053FB8F /* Base */,
+				046628FB224C64410053FB8F /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		046628C7224C634A0053FB8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046628C8224C634A0053FB8F /* Base */,
+				046628FC224C64410053FB8F /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04662901224C64A60053FB8F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04662900224C64A60053FB8F /* en */,
+				04662902224C64A80053FB8F /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		046628E1224C634A0053FB8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		046628E2224C634A0053FB8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		046628E4224C634A0053FB8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA7AMLWM6H;
+				INFOPLIST_FILE = YHPhotoSelectorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		046628E5224C634A0053FB8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA7AMLWM6H;
+				INFOPLIST_FILE = YHPhotoSelectorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		046628E7224C634A0053FB8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA7AMLWM6H;
+				INFOPLIST_FILE = YHPhotoSelectorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YHPhotoSelectorDemo.app/YHPhotoSelectorDemo";
+			};
+			name = Debug;
+		};
+		046628E8224C634A0053FB8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA7AMLWM6H;
+				INFOPLIST_FILE = YHPhotoSelectorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YHPhotoSelectorDemo.app/YHPhotoSelectorDemo";
+			};
+			name = Release;
+		};
+		046628EA224C634A0053FB8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA7AMLWM6H;
+				INFOPLIST_FILE = YHPhotoSelectorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YHPhotoSelectorDemo;
+			};
+			name = Debug;
+		};
+		046628EB224C634A0053FB8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA7AMLWM6H;
+				INFOPLIST_FILE = YHPhotoSelectorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YHPhotoSelectorDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		046628B6224C63490053FB8F /* Build configuration list for PBXProject "YHPhotoSelectorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046628E1224C634A0053FB8F /* Debug */,
+				046628E2224C634A0053FB8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046628E3224C634A0053FB8F /* Build configuration list for PBXNativeTarget "YHPhotoSelectorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046628E4224C634A0053FB8F /* Debug */,
+				046628E5224C634A0053FB8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046628E6224C634A0053FB8F /* Build configuration list for PBXNativeTarget "YHPhotoSelectorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046628E7224C634A0053FB8F /* Debug */,
+				046628E8224C634A0053FB8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046628E9224C634A0053FB8F /* Build configuration list for PBXNativeTarget "YHPhotoSelectorDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046628EA224C634A0053FB8F /* Debug */,
+				046628EB224C634A0053FB8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 046628B3224C63490053FB8F /* Project object */;
+}
