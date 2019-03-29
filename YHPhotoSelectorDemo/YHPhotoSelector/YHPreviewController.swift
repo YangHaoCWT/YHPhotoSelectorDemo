@@ -76,7 +76,7 @@ class YHPreviewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        automaticallyAdjustsScrollViewInsets = false
+//        automaticallyAdjustsScrollViewInsets = false
 
         setNavgationTime(asset: photosSelect.first)
 
