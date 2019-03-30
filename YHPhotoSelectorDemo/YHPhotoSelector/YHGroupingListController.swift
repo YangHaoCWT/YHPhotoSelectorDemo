@@ -50,7 +50,7 @@ public class YHGroupingListController: UIViewController {
 
     var localizedTitles = [String]()
 
-    var delegate : GroupingListDelegate?
+    public var delegate : GroupingListDelegate?
 
     override public func viewDidLoad() {
         super.viewDidLoad()
