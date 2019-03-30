@@ -11,7 +11,7 @@ import Photos
 
 let CellGrouping = "CellGrouping"
 
-protocol GroupingListDelegate: NSObjectProtocol {
+public protocol GroupingListDelegate: NSObjectProtocol {
     func selectVideoPhoto(select:[PHAsset])
 }
 
