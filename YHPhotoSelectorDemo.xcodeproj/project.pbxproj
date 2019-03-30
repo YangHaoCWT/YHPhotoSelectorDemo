@@ -21,8 +21,8 @@
 		046628F8224C63A50053FB8F /* YHPickerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F1224C63A50053FB8F /* YHPickerCollectionCell.swift */; };
 		046628F9224C63A50053FB8F /* YHGroupingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F2224C63A50053FB8F /* YHGroupingListController.swift */; };
 		046628FA224C63A50053FB8F /* YHPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F3224C63A50053FB8F /* YHPreviewController.swift */; };
-		046628FF224C64A60053FB8F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04662901224C64A60053FB8F /* Localizable.strings */; };
 		04662904224C6DFA0053FB8F /* YHPhotoSelector.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */; };
+		DCCBC0AA224F1F3A00B2B339 /* YHPhotoSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBC0A9224F1F3A00B2B339 /* YHPhotoSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +65,8 @@
 		046628F3224C63A50053FB8F /* YHPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPreviewController.swift; sourceTree = "<group>"; };
 		046628FB224C64410053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		046628FC224C64410053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		04662900224C64A60053FB8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		04662902224C64A80053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YHPhotoSelector.bundle; sourceTree = "<group>"; };
+		DCCBC0A9224F1F3A00B2B339 /* YHPhotoSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHPhotoSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +149,7 @@
 		046628EC224C63A50053FB8F /* YHPhotoSelector */ = {
 			isa = PBXGroup;
 			children = (
+				DCCBC0A9224F1F3A00B2B339 /* YHPhotoSelector.swift */,
 				046628ED224C63A50053FB8F /* YHSelectConfig.swift */,
 				046628F2224C63A50053FB8F /* YHGroupingListController.swift */,
 				046628EE224C63A50053FB8F /* YHGroupingCell.swift */,
@@ -158,7 +158,6 @@
 				046628F3224C63A50053FB8F /* YHPreviewController.swift */,
 				046628EF224C63A50053FB8F /* YHPreviewCollectionCell.swift */,
 				04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */,
-				04662901224C64A60053FB8F /* Localizable.strings */,
 			);
 			path = YHPhotoSelector;
 			sourceTree = "<group>";
@@ -270,7 +269,6 @@
 			files = (
 				046628C9224C634A0053FB8F /* LaunchScreen.storyboard in Resources */,
 				04662904224C6DFA0053FB8F /* YHPhotoSelector.bundle in Resources */,
-				046628FF224C64A60053FB8F /* Localizable.strings in Resources */,
 				046628C6224C634A0053FB8F /* Assets.xcassets in Resources */,
 				046628C4224C63490053FB8F /* Main.storyboard in Resources */,
 			);
@@ -297,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCCBC0AA224F1F3A00B2B339 /* YHPhotoSelector.swift in Sources */,
 				046628F4224C63A50053FB8F /* YHSelectConfig.swift in Sources */,
 				046628F7224C63A50053FB8F /* YHPickerViewController.swift in Sources */,
 				046628C1224C63490053FB8F /* ViewController.swift in Sources */,
@@ -357,15 +356,6 @@
 				046628FC224C64410053FB8F /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		04662901224C64A60053FB8F /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04662900224C64A60053FB8F /* en */,
-				04662902224C64A80053FB8F /* zh-Hans */,
-			);
-			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

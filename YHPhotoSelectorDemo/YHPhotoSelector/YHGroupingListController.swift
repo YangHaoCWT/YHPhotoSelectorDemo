@@ -15,7 +15,7 @@ protocol GroupingListDelegate: NSObjectProtocol {
     func selectVideoPhoto(select:[PHAsset])
 }
 
-class YHGroupingListController: UIViewController {
+public class YHGroupingListController: UIViewController {
 
     lazy var groupingTabView: UITableView = {
         let groupingTabView = UITableView.init(frame: view.bounds, style: .grouped)
@@ -37,7 +37,7 @@ class YHGroupingListController: UIViewController {
 
     var selectConfig:YHSelectConfig?
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         title = NSLocalizedString("Custom album select", comment: "")
@@ -50,7 +50,7 @@ class YHGroupingListController: UIViewController {
 
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         navigationController?.setToolbarHidden(true, animated: true)
@@ -61,7 +61,7 @@ class YHGroupingListController: UIViewController {
 
     }
 
-    override func loadView() {
+    override public func loadView() {
         super.loadView()
 
         view.addSubview(groupingTabView)
@@ -78,15 +78,15 @@ class YHGroupingListController: UIViewController {
 
 extension YHGroupingListController: UITableViewDataSource, UITableViewDelegate, YHPickerViewDelegate {
 
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    private func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return nil
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return groupingTabViewDataSouce.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         var cell = tableView.dequeueReusableCell(withIdentifier: CellGrouping)
 
@@ -103,7 +103,7 @@ extension YHGroupingListController: UITableViewDataSource, UITableViewDelegate, 
         return cell!
     }
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         let pickerViewController = YHPickerViewController.init()
 
@@ -116,15 +116,15 @@ extension YHGroupingListController: UITableViewDataSource, UITableViewDelegate, 
 
     }
 
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    private func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.00001
     }
 
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    private func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.00001
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    private func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeight + 10 * 2
     }
 
