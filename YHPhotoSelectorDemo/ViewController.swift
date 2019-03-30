@@ -57,11 +57,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     public func yh_SelectPhotoVideo() {
 
-
         let yhGroupingListController = YHGroupingListController.init()
         yhGroupingListController.delegate = self
-        let selectConfig = YHSelectConfig.init(selectIndex: 5, selectenum: .all)
-        yhGroupingListController.selectConfig = selectConfig
+        yhGroupingListController.selectIndex = 5
+        yhGroupingListController.selectenum = .photo
 
         present(UINavigationController.init(rootViewController: yhGroupingListController), animated: true) {
 

@@ -11,12 +11,29 @@ import Photos
 
 let CellGrouping = "CellGrouping"
 
+/// 文件类型 video = 视屏  photo = 照片  all = 视屏+照片
+/// File type video = video photo = all = video + photo
+public enum selectEnum {
+    case video
+    case photo
+    case all
+}
+
 public protocol GroupingListDelegate: NSObjectProtocol {
     func selectVideoPhoto(select:[PHAsset])
 }
 
 public class YHGroupingListController: UIViewController {
 
+    /// 可选照片数量 默认最大9张
+    /// The default maximum number of photos is 9
+    public var selectIndex = 9
+    
+    /// 默认选择照片
+    /// Select photos by default
+    public var selectenum : selectEnum = .photo
+    
+    
     lazy var groupingTabView: UITableView = {
         let groupingTabView = UITableView.init(frame: view.bounds, style: .grouped)
         groupingTabView.backgroundColor = UIColor.white
@@ -35,11 +52,9 @@ public class YHGroupingListController: UIViewController {
 
     var delegate : GroupingListDelegate?
 
-    var selectConfig:YHSelectConfig?
-
     override public func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = NSLocalizedString("Custom album select", comment: "")
 
         navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: NSLocalizedString("Cancel", comment: ""), style: .plain, target: self, action: #selector(dismissController))
@@ -78,7 +93,7 @@ public class YHGroupingListController: UIViewController {
 
 extension YHGroupingListController: UITableViewDataSource, UITableViewDelegate, YHPickerViewDelegate {
 
-    private func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return nil
     }
 
@@ -103,12 +118,12 @@ extension YHGroupingListController: UITableViewDataSource, UITableViewDelegate, 
         return cell!
     }
 
-    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         let pickerViewController = YHPickerViewController.init()
 
         pickerViewController.delegate = self
-        pickerViewController.selectConfig = selectConfig
+        pickerViewController.selectIndex = selectIndex
         pickerViewController.fetchResult = groupingTabViewDataSouce[indexPath.row]
         pickerViewController.title = localizedTitles[indexPath.row]
 
@@ -116,15 +131,15 @@ extension YHGroupingListController: UITableViewDataSource, UITableViewDelegate, 
 
     }
 
-    private func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.00001
     }
 
-    private func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.00001
     }
 
-    private func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeight + 10 * 2
     }
 
@@ -200,11 +215,11 @@ extension YHGroupingListController {
         options.sortDescriptors = [NSSortDescriptor.init(key: "creationDate", ascending: false)]
 
         /// 图片 || 视屏
-        if selectConfig?.selectenum == .photo {
+        if selectenum == .photo {
 
             options.predicate = NSPredicate(format: "mediaType == %d",  Int8(PHAssetMediaType.image.rawValue))
 
-        } else if selectConfig?.selectenum == .video {
+        } else if selectenum == .video {
 
             options.predicate = NSPredicate(format: "mediaType == %d",  Int8(PHAssetMediaType.video.rawValue))
 

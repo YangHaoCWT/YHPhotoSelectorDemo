@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'YHPhotoSelector'
-s.version          = '0.0.9'
+s.version          = '0.1'
 s.swift_version = '4.2'
 s.summary          = '相册和视频选择器'
 s.homepage         = 'https://github.com/YangHaoLoad/YHPhotoSelectorDemo'

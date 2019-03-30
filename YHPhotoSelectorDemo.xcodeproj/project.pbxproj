@@ -22,7 +22,6 @@
 		046628F9224C63A50053FB8F /* YHGroupingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F2224C63A50053FB8F /* YHGroupingListController.swift */; };
 		046628FA224C63A50053FB8F /* YHPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F3224C63A50053FB8F /* YHPreviewController.swift */; };
 		04662904224C6DFA0053FB8F /* YHPhotoSelector.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */; };
-		DCCBC0AA224F1F3A00B2B339 /* YHPhotoSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCBC0A9224F1F3A00B2B339 /* YHPhotoSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,6 @@
 		046628FB224C64410053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		046628FC224C64410053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YHPhotoSelector.bundle; sourceTree = "<group>"; };
-		DCCBC0A9224F1F3A00B2B339 /* YHPhotoSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHPhotoSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +147,6 @@
 		046628EC224C63A50053FB8F /* YHPhotoSelector */ = {
 			isa = PBXGroup;
 			children = (
-				DCCBC0A9224F1F3A00B2B339 /* YHPhotoSelector.swift */,
 				046628ED224C63A50053FB8F /* YHSelectConfig.swift */,
 				046628F2224C63A50053FB8F /* YHGroupingListController.swift */,
 				046628EE224C63A50053FB8F /* YHGroupingCell.swift */,
@@ -295,7 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCCBC0AA224F1F3A00B2B339 /* YHPhotoSelector.swift in Sources */,
 				046628F4224C63A50053FB8F /* YHSelectConfig.swift in Sources */,
 				046628F7224C63A50053FB8F /* YHPickerViewController.swift in Sources */,
 				046628C1224C63490053FB8F /* ViewController.swift in Sources */,

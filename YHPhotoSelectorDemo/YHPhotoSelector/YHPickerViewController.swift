@@ -19,7 +19,7 @@ protocol YHPickerViewDelegate: NSObjectProtocol {
 
 class YHPickerViewController: UIViewController {
 
-    var selectConfig:YHSelectConfig?
+    public var selectIndex = 9
 
     lazy var flowLayout: UICollectionViewFlowLayout = {
         let flowLayout = UICollectionViewFlowLayout.init()
@@ -60,7 +60,7 @@ class YHPickerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.backgroundColor = UIColor.white
 
         setToolBar()
@@ -195,7 +195,7 @@ extension YHPickerViewController : UICollectionViewDataSource, UICollectionViewD
 
         let asset = fetchResult[indexPath.item]
 
-        if selectPhotos.count >= selectConfig?.selectIndex ?? 0 && isSelectCell(asset: asset) {
+        if selectPhotos.count >= selectIndex && isSelectCell(asset: asset) {
             AlertControllerTools.show(vc: self)
             return
         }
