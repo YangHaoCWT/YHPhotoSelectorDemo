@@ -25,9 +25,14 @@ class YHPickerCollectionCell: UICollectionViewCell {
     }
 
     lazy var playImageView: UIImageView = {
-        let imgsize = UIImage.init(named: video_playName)!.size
+        
+        guard let image = Bundle.pathImage(pngName: video_playName) else {
+            return UIImageView.init()
+        }
+        
+        let imgsize = image.size
         let playImageView = UIImageView.init(frame: CGRect.init(x: (contentView.frame.size.width - imgsize.width) / 2, y: (contentView.frame.size.height - imgsize.height) / 2, width: imgsize.width, height: imgsize.height))
-        playImageView.image = UIImage.init(named: video_playName)
+        playImageView.image = image
         playImageView.isHidden = true
         return playImageView
     }()
@@ -143,8 +148,6 @@ extension YHPickerCollectionCell {
 
 class SelectedView: UIView {
 
-    let selectImageName = photoSelectedName
-
     override init(frame: CGRect) {
         super.init(frame: frame)
 
@@ -161,7 +164,12 @@ class SelectedView: UIView {
     lazy var selectedButton: UIButton = {
         let selectImageWH = frame.size.width / 4
         let selectedButton = UIButton.init(frame: CGRect.init(x: frame.size.width - 5 - selectImageWH, y: 5, width: selectImageWH, height: selectImageWH))
-        selectedButton.setImage(UIImage.init(named: selectImageName), for: .normal)
+        
+        guard let image = Bundle.pathImage(pngName: photoSelectedName) else {
+            return UIButton.init()
+        }
+        selectedButton.setImage(image, for: .normal)
+        
         return selectedButton
     }()
 

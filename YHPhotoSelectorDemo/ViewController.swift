@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func setNavigationController() {
 
-        self.title = NSLocalizedString("YHPhotoSelector", comment: "")
+        self.title = Bundle.localizedString(forKey: "YHPhotoSelector")
 
     }
 
@@ -44,7 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = NSLocalizedString("Custom style", comment: "")
+        cell.textLabel?.text = Bundle.localizedString(forKey: "Custom style")
         return cell
     }
 

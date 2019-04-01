@@ -27,9 +27,14 @@ class YHPreviewCollectionCell: UICollectionViewCell {
     }
 
     lazy var playImageView: UIImageView = {
-        let imgsize = UIImage.init(named: video_playName)!.size
+        
+        guard let image = Bundle.pathImage(pngName: video_playName) else {
+            return UIImageView.init()
+        }
+        
+        let imgsize = image.size
         let playImageView = UIImageView.init(frame: CGRect.init(x: (contentView.frame.size.width - imgsize.width) / 2, y: (contentView.frame.size.height - imgsize.height) / 2, width: imgsize.width, height: imgsize.height))
-        playImageView.image = UIImage.init(named: video_playName)
+        playImageView.image = image
         playImageView.isHidden = true
         return playImageView
     }()

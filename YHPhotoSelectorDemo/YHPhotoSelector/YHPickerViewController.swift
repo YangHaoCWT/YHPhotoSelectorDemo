@@ -41,13 +41,13 @@ class YHPickerViewController: UIViewController {
     }()
 
     lazy var barItem: UIBarButtonItem = {
-        let barItem = UIBarButtonItem.init(title: NSLocalizedString("Preview", comment: ""), style: .plain, target: self, action: #selector(touchPreview))
+        let barItem = UIBarButtonItem.init(title: Bundle.localizedString(forKey: "Preview"), style: .plain, target: self, action: #selector(touchPreview))
         barItem.isEnabled = false
         return barItem
     }()
 
     lazy var barItemComplete: UIBarButtonItem = {
-        let barItemComplete = UIBarButtonItem.init(title: NSLocalizedString("Complete", comment: ""), style: .plain, target: self, action: #selector(touchBarItemComplete))
+        let barItemComplete = UIBarButtonItem.init(title: Bundle.localizedString(forKey: "Complete"), style: .plain, target: self, action: #selector(touchBarItemComplete))
         barItemComplete.isEnabled = false
         return barItemComplete
     }()
@@ -101,13 +101,13 @@ extension YHPickerViewController {
         if selectPhotos.count > 0 {
 
             barItem.isEnabled = true
-            barItem.title = NSLocalizedString("Preview", comment: "") + " (" + "\(selectPhotos.count)" + ")"
+            barItem.title = Bundle.localizedString(forKey: "Preview") + " (" + "\(selectPhotos.count)" + ")"
             barItemComplete.isEnabled = true
 
         } else {
 
             barItem.isEnabled = false
-            barItem.title = NSLocalizedString("Preview", comment: "")
+            barItem.title = Bundle.localizedString(forKey: "Preview")
             barItemComplete.isEnabled = false
 
         }

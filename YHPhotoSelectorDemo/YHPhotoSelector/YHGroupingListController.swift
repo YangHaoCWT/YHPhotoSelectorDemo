@@ -55,9 +55,9 @@ public class YHGroupingListController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        title = NSLocalizedString("Custom album select", comment: "")
+        title = Bundle.localizedString(forKey: "Custom album select")
 
-        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: NSLocalizedString("Cancel", comment: ""), style: .plain, target: self, action: #selector(dismissController))
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: Bundle.localizedString(forKey: "Cancel"), style: .plain, target: self, action: #selector(dismissController))
 
         navigationController?.navigationBar.isTranslucent = true
 
@@ -167,11 +167,11 @@ extension YHGroupingListController {
 
                 if PHPhotoLibrary.authorizationStatus() != .authorized {
 
-                    let alert = UIAlertController.init(title: NSLocalizedString("Unable to access album", comment: ""), message: NSLocalizedString("Please allow to access your album", comment: ""), preferredStyle: .alert)
+                    let alert = UIAlertController.init(title: Bundle.localizedString(forKey: "Unable to access album"), message: Bundle.localizedString(forKey: "Please allow to access your album"), preferredStyle: .alert)
 
-                    alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: ""), style: .default, handler: nil))
+                    alert.addAction(UIAlertAction.init(title: Bundle.localizedString(forKey: "Cancel"), style: .default, handler: nil))
 
-                    alert.addAction(UIAlertAction.init(title: NSLocalizedString("Setting", comment: ""), style: .default, handler: { (action) in
+                    alert.addAction(UIAlertAction.init(title: Bundle.localizedString(forKey: "Setting"), style: .default, handler: { (action) in
 
 
                         UIApplication.shared.open(URL.init(string: "\(UIApplication.openSettingsURLString)")!, options: [UIApplication.OpenExternalURLOptionsKey.universalLinksOnly : false], completionHandler: { (bool) in

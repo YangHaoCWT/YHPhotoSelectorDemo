@@ -53,7 +53,12 @@ class YHPreviewController: UIViewController {
         let buttonSelect = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: selectImageWH, height: selectImageWH))
         buttonSelect.widthAnchor.constraint(equalToConstant: 30).isActive = true
         buttonSelect.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        buttonSelect.setImage(UIImage.init(named: photoSelectedName), for: .normal)
+        
+        guard let image = Bundle.pathImage(pngName: photoSelectedName) else {
+            return UIButton.init()
+        }
+        buttonSelect.setImage(image, for: .normal)
+        
         buttonSelect.addTarget(self, action: #selector(clickSelectButton), for: .touchUpInside)
         return buttonSelect
     }()
@@ -152,12 +157,19 @@ extension YHPreviewController: UICollectionViewDelegate, UICollectionViewDataSou
             setNavgationTime(asset: photosSelect[itemIndex])
 
             if isSelectCell(asset: photosSelect[itemIndex]) {
-
-                buttonSelect.setImage(UIImage.init(named: photoNormalName), for: .normal)
+                
+                guard let image = Bundle.pathImage(pngName: photoNormalName) else {
+                    return
+                }
+                
+                buttonSelect.setImage(image, for: .normal)
 
             } else {
 
-                buttonSelect.setImage(UIImage.init(named: photoSelectedName), for: .normal)
+                guard let image = Bundle.pathImage(pngName: photoSelectedName) else {
+                    return 
+                }
+                buttonSelect.setImage(image, for: .normal)
 
             }
 
@@ -258,13 +270,19 @@ extension YHPreviewController {
 
         if isSelectCell(asset: photosSelect[itemIndex]) {
 
-            buttonSelect.setImage(UIImage.init(named: photoSelectedName), for: .normal)
+            guard let image = Bundle.pathImage(pngName: photoSelectedName) else {
+                return
+            }
+            buttonSelect.setImage(image, for: .normal)
 
             operationPhotosSelect.append(photosSelect[itemIndex])
 
         } else {
-
-            buttonSelect.setImage(UIImage.init(named: photoNormalName), for: .normal)
+            
+            guard let image = Bundle.pathImage(pngName: photoNormalName) else {
+                return
+            }
+            buttonSelect.setImage(image, for: .normal)
 
             operationPhotosSelect.removeAll(where: { $0 == photosSelect[itemIndex] })
 
