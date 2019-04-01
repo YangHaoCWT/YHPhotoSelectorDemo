@@ -16,11 +16,15 @@ extension Bundle {
     
     class func pathImage(pngName:String) -> UIImage? {
         
-        let bundlePath = Bundle.main.path(forResource: "YHPhotoSelector", ofType: "bundle")
+        let bundleSelector = Bundle(for: YHPhotoSelector.self)
         
-        let path = Bundle.init(path: bundlePath ?? "")
+        let bundle = bundleSelector.path(forResource: "YHPhotoSelector", ofType: "bundle")
         
-        let image = UIImage.init(named: pngName, in: path, compatibleWith: nil)
+        let bundleNew = Bundle.init(path: bundle!)
+        
+        let imageFile = bundleNew?.path(forResource: pngName, ofType: "")
+        
+        let image = UIImage.init(contentsOfFile: imageFile ?? "")
         
         return image
 
@@ -42,14 +46,17 @@ extension Bundle {
             language = "en"
         }
         
-        let bundle = Bundle.init(path: Bundle.main.path(forResource: "YHPhotoSelector", ofType: "bundle") ?? "")
+        let bundle = Bundle(for: YHPhotoSelector.self)
+
+        let url = bundle.url(forResource: "YHPhotoSelector", withExtension: "bundle")
         
-        let bundlePath = Bundle.init(path: bundle?.path(forResource: language, ofType: "lproj") ?? "")
+        let bundleURL = Bundle.init(url: url!)
         
+        let bundleFile = Bundle.init(path: (bundleURL?.path(forResource: language, ofType: "lproj"))!)
         
-        let v = bundlePath?.localizedString(forKey: key, value: value, table: nil)
+        let v = bundleFile?.localizedString(forKey: key, value: value, table: nil)
         
-        return Bundle.main.localizedString(forKey: key, value: v, table: nil)
+        return bundle.localizedString(forKey: key, value: v, table: nil)
         
     }
     
