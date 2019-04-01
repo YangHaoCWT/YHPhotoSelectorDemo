@@ -7,7 +7,7 @@
 
 ## <a id="Renderings"></a>Renderings
 
-![Record](Record.gif)
+![image](https://github.com/YangHaoLoad/YHPhotoSelectorDemo/blob/master/Record.gif)
 
 ## <a id="Howtouse"></a>How to use
 * Use CocoaPods:
