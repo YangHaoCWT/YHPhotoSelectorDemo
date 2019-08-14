@@ -61,18 +61,21 @@ public class YHGroupingListController: UIViewController {
 
         navigationController?.navigationBar.isTranslucent = true
 
-        inspectionRights()
-
+        /// 权限请求
+        DispatchQueue.main.async { [weak self] in
+            YHPermissionRequest.whetherAccessTheAlbum(presentVC: self!, isAccess: { (isAccess) in
+                
+                isAccess ? self?.allGroupsTheAlbum() : self?.dismissController()
+                
+            })
+        }
+        
     }
 
     override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         navigationController?.setToolbarHidden(true, animated: true)
-
-        DispatchQueue.main.async {
-            self.groupingTabView.reloadData()
-        }
 
     }
 
@@ -86,6 +89,12 @@ public class YHGroupingListController: UIViewController {
     @objc func dismissController() {
         dismiss(animated: true) {
 
+        }
+    }
+    
+    private func reloadUI() {
+        DispatchQueue.main.async {
+            self.groupingTabView.reloadData()
         }
     }
 
@@ -110,12 +119,15 @@ extension YHGroupingListController: UITableViewDataSource, UITableViewDelegate, 
         }
 
         let asset = groupingTabViewDataSouce[indexPath.row].firstObject
+        
         let listName = localizedTitles[indexPath.row] + "   "
+        
         let listCount = "(" + "\(groupingTabViewDataSouce[indexPath.row].count)" + ")"
 
         (cell as! YHGroupingCell).setImgeViewLabelUI(asset: asset, listName: listName, listCount: listCount)
 
         return cell!
+        
     }
 
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -123,8 +135,11 @@ extension YHGroupingListController: UITableViewDataSource, UITableViewDelegate, 
         let pickerViewController = YHPickerViewController.init()
 
         pickerViewController.delegate = self
+        
         pickerViewController.selectIndex = selectIndex
+        
         pickerViewController.fetchResult = groupingTabViewDataSouce[indexPath.row]
+        
         pickerViewController.title = localizedTitles[indexPath.row]
 
         navigationController?.pushViewController(pickerViewController, animated: true)
@@ -249,6 +264,8 @@ extension YHGroupingListController {
 
         }
 
+        reloadUI()
+        
     }
 
 }

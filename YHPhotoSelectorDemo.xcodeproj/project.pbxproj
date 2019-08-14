@@ -22,7 +22,8 @@
 		046628F9224C63A50053FB8F /* YHGroupingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F2224C63A50053FB8F /* YHGroupingListController.swift */; };
 		046628FA224C63A50053FB8F /* YHPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F3224C63A50053FB8F /* YHPreviewController.swift */; };
 		04662904224C6DFA0053FB8F /* YHPhotoSelector.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */; };
-		DC0143C72251FF2B00E0F59F /* YHPhotoSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0143C62251FF2B00E0F59F /* YHPhotoSelector.swift */; };
+		DC3496502303A0EF0062C8D0 /* YHPermissionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34964F2303A0EF0062C8D0 /* YHPermissionRequest.swift */; };
+		DC3496522303A2E90062C8D0 /* YHPhotoSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3496512303A2E90062C8D0 /* YHPhotoSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,8 @@
 		046628FB224C64410053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		046628FC224C64410053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YHPhotoSelector.bundle; sourceTree = "<group>"; };
-		DC0143C62251FF2B00E0F59F /* YHPhotoSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHPhotoSelector.swift; sourceTree = "<group>"; };
+		DC34964F2303A0EF0062C8D0 /* YHPermissionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPermissionRequest.swift; sourceTree = "<group>"; };
+		DC3496512303A2E90062C8D0 /* YHPhotoSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPhotoSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +158,9 @@
 				046628F1224C63A50053FB8F /* YHPickerCollectionCell.swift */,
 				046628F3224C63A50053FB8F /* YHPreviewController.swift */,
 				046628EF224C63A50053FB8F /* YHPreviewCollectionCell.swift */,
+				DC34964F2303A0EF0062C8D0 /* YHPermissionRequest.swift */,
+				DC3496512303A2E90062C8D0 /* YHPhotoSelector.swift */,
 				04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */,
-				DC0143C62251FF2B00E0F59F /* YHPhotoSelector.swift */,
 			);
 			path = YHPhotoSelector;
 			sourceTree = "<group>";
@@ -230,13 +233,16 @@
 				TargetAttributes = {
 					046628BA224C63490053FB8F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 					046628CE224C634A0053FB8F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = 046628BA224C63490053FB8F;
 					};
 					046628D9224C634A0053FB8F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = 046628BA224C63490053FB8F;
 					};
 				};
@@ -295,9 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC0143C72251FF2B00E0F59F /* YHPhotoSelector.swift in Sources */,
 				046628F4224C63A50053FB8F /* YHSelectConfig.swift in Sources */,
+				DC3496502303A0EF0062C8D0 /* YHPermissionRequest.swift in Sources */,
 				046628F7224C63A50053FB8F /* YHPickerViewController.swift in Sources */,
+				DC3496522303A2E90062C8D0 /* YHPhotoSelector.swift in Sources */,
 				046628C1224C63490053FB8F /* ViewController.swift in Sources */,
 				046628F8224C63A50053FB8F /* YHPickerCollectionCell.swift in Sources */,
 				046628F6224C63A50053FB8F /* YHPreviewCollectionCell.swift in Sources */,
@@ -493,7 +500,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -512,7 +519,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -532,7 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YHPhotoSelectorDemo.app/YHPhotoSelectorDemo";
 			};
@@ -553,7 +560,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YHPhotoSelectorDemo.app/YHPhotoSelectorDemo";
 			};
@@ -573,7 +580,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = YHPhotoSelectorDemo;
 			};
@@ -593,7 +600,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YangHao.YHPhotoSelectorDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = YHPhotoSelectorDemo;
 			};

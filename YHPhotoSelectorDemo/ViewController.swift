@@ -22,20 +22,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
 
         setNavigationController()
-
     }
 
     override func loadView() {
         super.loadView()
-
         view.addSubview(tableView)
-
     }
 
     func setNavigationController() {
-
         self.title = Bundle.localizedString(forKey: "YHPhotoSelector")
-
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,9 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
         yh_SelectPhotoVideo()
-
     }
 
 
@@ -65,11 +58,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         present(UINavigationController.init(rootViewController: yhGroupingListController), animated: true) {
 
         }
-
+        
     }
 
     func selectVideoPhoto(select: [PHAsset]) {
-        print(select.count)
+        print("已选中的照片==\(select.count)张")
     }
 
 }

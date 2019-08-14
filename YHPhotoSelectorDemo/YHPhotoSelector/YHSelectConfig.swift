@@ -12,7 +12,7 @@ let photoNormalName = "PhotoNormal.png"
 let photoSelectedName = "select80.png"
 let video_playName = "video_play.png"
 
-extension Bundle {
+public extension Bundle {
     
     class func pathImage(pngName:String) -> UIImage? {
         
