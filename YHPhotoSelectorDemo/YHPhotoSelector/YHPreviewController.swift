@@ -80,8 +80,12 @@ class YHPreviewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        automaticallyAdjustsScrollViewInsets = false
+        
+        if #available(iOS 11.0, *) {
+            collectionView.contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false;
+        }
 
         setNavgationTime(asset: photosSelect.first)
 
