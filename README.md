@@ -7,9 +7,10 @@
 
 ## <a id="Renderings"></a>Renderings
 
-![image](https://user-images.githubusercontent.com/20283075/63069338-122d7e80-bf49-11e9-9ebe-47cdb96c720d.png)
-![image](https://user-images.githubusercontent.com/20283075/63069378-38531e80-bf49-11e9-93a3-074f5e609066.jpeg)
-![image](https://user-images.githubusercontent.com/20283075/63069385-3d17d280-bf49-11e9-8afd-6082f9a957c6.gif)
+![image](https://user-images.githubusercontent.com/20283075/63069844-5752b000-bf4b-11e9-8f19-b65cdca5e31d.png)
+![image](https://user-images.githubusercontent.com/20283075/63069852-60438180-bf4b-11e9-95bf-82d76b4156e5.png)
+![image](https://user-images.githubusercontent.com/20283075/63069855-66396280-bf4b-11e9-834c-456fb9b9f319.png)
+![image](https://user-images.githubusercontent.com/20283075/63069856-68032600-bf4b-11e9-8a97-670a493ef501.png)
 
 ## <a id="Howtouse"></a>How to use
 * Use CocoaPods:
