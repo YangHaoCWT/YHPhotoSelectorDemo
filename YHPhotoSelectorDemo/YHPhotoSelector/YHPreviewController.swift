@@ -115,7 +115,7 @@ class YHPreviewController: UIViewController {
 
         let flexibleSpace = UIBarButtonItem.init(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
 
-        let doneItem = UIBarButtonItem.init(barButtonSystemItem: .done, target: self, action: #selector(clickDoneButton))
+        let doneItem = UIBarButtonItem.init(title: Bundle.localizedString(forKey: "Complete"), style: .done, target: self, action: #selector(clickDoneButton))
 
         setToolbarItems([itemSelect, flexibleSpace, doneItem], animated: true)
 

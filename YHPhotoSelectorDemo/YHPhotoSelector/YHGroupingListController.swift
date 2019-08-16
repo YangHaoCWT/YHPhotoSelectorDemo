@@ -256,7 +256,8 @@ extension YHGroupingListController {
                 let asset = PHAsset.fetchAssets(in: assetCollection, options: options)
 
                 if asset.count > 0 {
-                    self?.localizedTitles.append(assetCollection.localizedTitle ?? "")
+                    self?.localizedTitles.append(Bundle.localizedString(forKey: assetCollection.localizedTitle ?? ""))
+                    
                     self?.groupingTabViewDataSouce.append(asset)
                 }
 
