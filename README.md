@@ -2,8 +2,7 @@
 一个支持多选的图片和视频选择器，超轻量级纯Siwft实现     A multi - choice picture and video selector, super lightweight pure Siwft implementation
 
 ## Requirements
-* iOS 11.0 or later
-* Xcode 11.0 or later
+* iOS 10.0 or later
 
 ## <a id="Renderings"></a>Renderings
 
