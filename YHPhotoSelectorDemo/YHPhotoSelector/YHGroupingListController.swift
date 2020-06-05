@@ -61,8 +61,17 @@ public class YHGroupingListController: UIViewController {
 
         navigationController?.navigationBar.isTranslucent = true
 
+    }
+    
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if localizedTitles.count > 0 {
+            return
+        }
+        
         /// 权限请求
-        DispatchQueue.main.async { [weak self] in
+        DispatchQueue.global().async { [weak self] in
             YHPermissionRequest.whetherAccessTheAlbum(presentVC: self!, isAccess: { (isAccess) in
                 
                 isAccess ? self?.allGroupsTheAlbum() : self?.dismissController()
@@ -87,8 +96,8 @@ public class YHGroupingListController: UIViewController {
     }
 
     @objc func dismissController() {
-        dismiss(animated: true) {
-
+        DispatchQueue.main.async { [weak self] in
+            self?.dismiss(animated: true) {}
         }
     }
     
@@ -256,6 +265,7 @@ extension YHGroupingListController {
                 let asset = PHAsset.fetchAssets(in: assetCollection, options: options)
 
                 if asset.count > 0 {
+                    
                     self?.localizedTitles.append(Bundle.localizedString(forKey: assetCollection.localizedTitle ?? ""))
                     
                     self?.groupingTabViewDataSouce.append(asset)

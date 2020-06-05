@@ -1,12 +1,16 @@
 # YHPhotoSelectorDemo
-一个支持多选的图片和视频选择器，超轻量级纯Siwft实现     A multi - choice picture and video selector, super lightweight pure Siwft implementation
+一个支持多选的图片和视频选择器，超轻量级纯Siwft实现     
+A multi - choice picture and video selector, super lightweight pure Siwft implementation
 
 ## Requirements
 * iOS 10.0 or later
 
 ## <a id="Renderings"></a>Renderings
 
-![image](https://user-images.githubusercontent.com/20283075/63070086-4b1b2280-bf4c-11e9-80dd-63e07ab5d684.png)![image](https://user-images.githubusercontent.com/20283075/63070090-4e161300-bf4c-11e9-9317-bee33ead764b.png)![image](https://user-images.githubusercontent.com/20283075/63070096-52423080-bf4c-11e9-9a6f-98656951b310.png)![image](https://user-images.githubusercontent.com/20283075/63070097-540bf400-bf4c-11e9-86b0-ffaa2e61f064.png)
+![Simulator Screen Shot - iPhone X - 2020-06-05 at 13 17 32](https://user-images.githubusercontent.com/20283075/83845081-c8fa2580-a73a-11ea-96db-1cb8a65337e4.png)![Simulator Screen Shot - iPhone X - 2020-06-05 at 13 17 34](https://user-images.githubusercontent.com/20283075/83845177-ee872f00-a73a-11ea-927b-71ebfdb74737.png)
+
+![Simulator Screen Shot - iPhone X - 2020-06-05 at 13 17 37](https://user-images.githubusercontent.com/20283075/83845232-06f74980-a73b-11ea-9993-5109b5b61c6d.png)
+![Simulator Screen Shot - iPhone X - 2020-06-05 at 13 17 45](https://user-images.githubusercontent.com/20283075/83845254-16769280-a73b-11ea-8ed5-358429069867.png)
 
 ## <a id="Howtouse"></a>How to use
 * Use CocoaPods:

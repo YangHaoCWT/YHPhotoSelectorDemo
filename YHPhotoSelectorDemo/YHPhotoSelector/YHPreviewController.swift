@@ -72,6 +72,7 @@ class YHPreviewController: UIViewController {
     }
 
     var operationPhotosSelect = [PHAsset]()
+    
     var itemIndex = 0
 
     override var prefersStatusBarHidden: Bool {
@@ -173,6 +174,7 @@ extension YHPreviewController: UICollectionViewDelegate, UICollectionViewDataSou
                 guard let image = Bundle.pathImage(pngName: photoSelectedName) else {
                     return 
                 }
+                
                 buttonSelect.setImage(image, for: .normal)
 
             }
@@ -277,6 +279,7 @@ extension YHPreviewController {
             guard let image = Bundle.pathImage(pngName: photoSelectedName) else {
                 return
             }
+            
             buttonSelect.setImage(image, for: .normal)
 
             operationPhotosSelect.append(photosSelect[itemIndex])
@@ -286,6 +289,7 @@ extension YHPreviewController {
             guard let image = Bundle.pathImage(pngName: photoNormalName) else {
                 return
             }
+            
             buttonSelect.setImage(image, for: .normal)
 
             operationPhotosSelect.removeAll(where: { $0 == photosSelect[itemIndex] })
@@ -317,15 +321,23 @@ extension YHPreviewController {
         }
 
         let dateFormat = DateFormatter.init()
+        
         dateFormat.dateFormat = "yyyy-MM-dd"
+        
         let day = dateFormat.string(from: (phAsset.creationDate ?? nil)!)
+        
         dateFormat.dateFormat = "HH:mm:ss"
+        
         let time = dateFormat.string(from: (phAsset.creationDate ?? nil)!)
+        
         let textAttrString = NSMutableAttributedString.init(string: "\(day)\n\(time)")
+        
         textAttrString.addAttribute(NSAttributedString.Key.font, value: UIFont.systemFont(ofSize: 15), range: NSRange.init(location: 0, length: day.count))
+        
         textAttrString.addAttribute(NSAttributedString.Key.font, value: UIFont.systemFont(ofSize: 11), range: NSRange.init(location:day.count, length: time.count + 1))
+        
         titleView.attributedText = textAttrString
-
+        
         navigationItem.titleView = titleView
 
     }

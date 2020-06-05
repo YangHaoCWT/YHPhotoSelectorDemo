@@ -49,7 +49,7 @@ class YHPickerCollectionCell: UICollectionViewCell {
     lazy var shadowView: UIView = {
         let shadowView = UIView.init(frame: CGRect.init(x: 0, y: frame.size.height - 20, width: frame.size.height, height: 20))
         shadowView.isHidden = true
-        shadowView.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        shadowView.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         return shadowView
     }()
 
@@ -81,7 +81,6 @@ extension YHPickerCollectionCell {
         }
 
         setupVideo(asset:phAsset)
-
 
         /// Waiting Optimize...
         PHImageManager.default().requestImage(for: phAsset, targetSize: CGSize.init(width: 200, height: 200), contentMode: .aspectFill, options: nil) { (image, info) in
@@ -151,7 +150,7 @@ class SelectedView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        backgroundColor = UIColor.white.withAlphaComponent(0.4)
+        backgroundColor = UIColor.white.withAlphaComponent(0.3)
 
         addSubview(selectedButton)
 
@@ -163,7 +162,7 @@ class SelectedView: UIView {
 
     lazy var selectedButton: UIButton = {
         let selectImageWH = frame.size.width / 4
-        let selectedButton = UIButton.init(frame: CGRect.init(x: frame.size.width - 5 - selectImageWH, y: 5, width: selectImageWH, height: selectImageWH))
+        let selectedButton = UIButton.init(frame: CGRect.init(x: frame.size.width - 5 - selectImageWH, y: frame.size.width - 5 - selectImageWH, width: selectImageWH, height: selectImageWH))
         
         guard let image = Bundle.pathImage(pngName: photoSelectedName) else {
             return UIButton.init()

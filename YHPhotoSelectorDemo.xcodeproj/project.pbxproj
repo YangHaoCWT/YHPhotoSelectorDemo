@@ -14,16 +14,16 @@
 		046628C9224C634A0053FB8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046628C7224C634A0053FB8F /* LaunchScreen.storyboard */; };
 		046628D4224C634A0053FB8F /* YHPhotoSelectorDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628D3224C634A0053FB8F /* YHPhotoSelectorDemoTests.swift */; };
 		046628DF224C634A0053FB8F /* YHPhotoSelectorDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628DE224C634A0053FB8F /* YHPhotoSelectorDemoUITests.swift */; };
-		046628F4224C63A50053FB8F /* YHSelectConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628ED224C63A50053FB8F /* YHSelectConfig.swift */; };
-		046628F5224C63A50053FB8F /* YHGroupingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628EE224C63A50053FB8F /* YHGroupingCell.swift */; };
-		046628F6224C63A50053FB8F /* YHPreviewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628EF224C63A50053FB8F /* YHPreviewCollectionCell.swift */; };
-		046628F7224C63A50053FB8F /* YHPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F0224C63A50053FB8F /* YHPickerViewController.swift */; };
-		046628F8224C63A50053FB8F /* YHPickerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F1224C63A50053FB8F /* YHPickerCollectionCell.swift */; };
-		046628F9224C63A50053FB8F /* YHGroupingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F2224C63A50053FB8F /* YHGroupingListController.swift */; };
-		046628FA224C63A50053FB8F /* YHPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046628F3224C63A50053FB8F /* YHPreviewController.swift */; };
-		04662904224C6DFA0053FB8F /* YHPhotoSelector.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */; };
-		DC3496502303A0EF0062C8D0 /* YHPermissionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34964F2303A0EF0062C8D0 /* YHPermissionRequest.swift */; };
-		DC3496522303A2E90062C8D0 /* YHPhotoSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3496512303A2E90062C8D0 /* YHPhotoSelector.swift */; };
+		F83F70152489F2EF00146BA1 /* YHSelectConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F700B2489F2EF00146BA1 /* YHSelectConfig.swift */; };
+		F83F70162489F2EF00146BA1 /* YHPermissionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F700C2489F2EF00146BA1 /* YHPermissionRequest.swift */; };
+		F83F70172489F2EF00146BA1 /* YHGroupingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F700D2489F2EF00146BA1 /* YHGroupingCell.swift */; };
+		F83F70182489F2EF00146BA1 /* YHPhotoSelector.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F83F700E2489F2EF00146BA1 /* YHPhotoSelector.bundle */; };
+		F83F70192489F2EF00146BA1 /* YHPreviewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F700F2489F2EF00146BA1 /* YHPreviewCollectionCell.swift */; };
+		F83F701A2489F2EF00146BA1 /* YHPhotoSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F70102489F2EF00146BA1 /* YHPhotoSelector.swift */; };
+		F83F701B2489F2EF00146BA1 /* YHPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F70112489F2EF00146BA1 /* YHPickerViewController.swift */; };
+		F83F701C2489F2EF00146BA1 /* YHPickerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F70122489F2EF00146BA1 /* YHPickerCollectionCell.swift */; };
+		F83F701D2489F2EF00146BA1 /* YHGroupingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F70132489F2EF00146BA1 /* YHGroupingListController.swift */; };
+		F83F701E2489F2EF00146BA1 /* YHPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F70142489F2EF00146BA1 /* YHPreviewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,18 +57,18 @@
 		046628DA224C634A0053FB8F /* YHPhotoSelectorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHPhotoSelectorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046628DE224C634A0053FB8F /* YHPhotoSelectorDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YHPhotoSelectorDemoUITests.swift; sourceTree = "<group>"; };
 		046628E0224C634A0053FB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		046628ED224C63A50053FB8F /* YHSelectConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHSelectConfig.swift; sourceTree = "<group>"; };
-		046628EE224C63A50053FB8F /* YHGroupingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHGroupingCell.swift; sourceTree = "<group>"; };
-		046628EF224C63A50053FB8F /* YHPreviewCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPreviewCollectionCell.swift; sourceTree = "<group>"; };
-		046628F0224C63A50053FB8F /* YHPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPickerViewController.swift; sourceTree = "<group>"; };
-		046628F1224C63A50053FB8F /* YHPickerCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPickerCollectionCell.swift; sourceTree = "<group>"; };
-		046628F2224C63A50053FB8F /* YHGroupingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHGroupingListController.swift; sourceTree = "<group>"; };
-		046628F3224C63A50053FB8F /* YHPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPreviewController.swift; sourceTree = "<group>"; };
 		046628FB224C64410053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		046628FC224C64410053FB8F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YHPhotoSelector.bundle; sourceTree = "<group>"; };
-		DC34964F2303A0EF0062C8D0 /* YHPermissionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPermissionRequest.swift; sourceTree = "<group>"; };
-		DC3496512303A2E90062C8D0 /* YHPhotoSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPhotoSelector.swift; sourceTree = "<group>"; };
+		F83F700B2489F2EF00146BA1 /* YHSelectConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHSelectConfig.swift; sourceTree = "<group>"; };
+		F83F700C2489F2EF00146BA1 /* YHPermissionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPermissionRequest.swift; sourceTree = "<group>"; };
+		F83F700D2489F2EF00146BA1 /* YHGroupingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHGroupingCell.swift; sourceTree = "<group>"; };
+		F83F700E2489F2EF00146BA1 /* YHPhotoSelector.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YHPhotoSelector.bundle; sourceTree = "<group>"; };
+		F83F700F2489F2EF00146BA1 /* YHPreviewCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPreviewCollectionCell.swift; sourceTree = "<group>"; };
+		F83F70102489F2EF00146BA1 /* YHPhotoSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPhotoSelector.swift; sourceTree = "<group>"; };
+		F83F70112489F2EF00146BA1 /* YHPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPickerViewController.swift; sourceTree = "<group>"; };
+		F83F70122489F2EF00146BA1 /* YHPickerCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPickerCollectionCell.swift; sourceTree = "<group>"; };
+		F83F70132489F2EF00146BA1 /* YHGroupingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHGroupingListController.swift; sourceTree = "<group>"; };
+		F83F70142489F2EF00146BA1 /* YHPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHPreviewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,7 @@
 			children = (
 				046628BE224C63490053FB8F /* AppDelegate.swift */,
 				046628C0224C63490053FB8F /* ViewController.swift */,
-				046628EC224C63A50053FB8F /* YHPhotoSelector */,
+				F83F700A2489F2EF00146BA1 /* YHPhotoSelector */,
 				046628C2224C63490053FB8F /* Main.storyboard */,
 				046628C5224C634A0053FB8F /* Assets.xcassets */,
 				046628C7224C634A0053FB8F /* LaunchScreen.storyboard */,
@@ -148,19 +148,19 @@
 			path = YHPhotoSelectorDemoUITests;
 			sourceTree = "<group>";
 		};
-		046628EC224C63A50053FB8F /* YHPhotoSelector */ = {
+		F83F700A2489F2EF00146BA1 /* YHPhotoSelector */ = {
 			isa = PBXGroup;
 			children = (
-				046628ED224C63A50053FB8F /* YHSelectConfig.swift */,
-				046628F2224C63A50053FB8F /* YHGroupingListController.swift */,
-				046628EE224C63A50053FB8F /* YHGroupingCell.swift */,
-				046628F0224C63A50053FB8F /* YHPickerViewController.swift */,
-				046628F1224C63A50053FB8F /* YHPickerCollectionCell.swift */,
-				046628F3224C63A50053FB8F /* YHPreviewController.swift */,
-				046628EF224C63A50053FB8F /* YHPreviewCollectionCell.swift */,
-				DC34964F2303A0EF0062C8D0 /* YHPermissionRequest.swift */,
-				DC3496512303A2E90062C8D0 /* YHPhotoSelector.swift */,
-				04662903224C6DFA0053FB8F /* YHPhotoSelector.bundle */,
+				F83F700B2489F2EF00146BA1 /* YHSelectConfig.swift */,
+				F83F700C2489F2EF00146BA1 /* YHPermissionRequest.swift */,
+				F83F700D2489F2EF00146BA1 /* YHGroupingCell.swift */,
+				F83F700E2489F2EF00146BA1 /* YHPhotoSelector.bundle */,
+				F83F700F2489F2EF00146BA1 /* YHPreviewCollectionCell.swift */,
+				F83F70102489F2EF00146BA1 /* YHPhotoSelector.swift */,
+				F83F70112489F2EF00146BA1 /* YHPickerViewController.swift */,
+				F83F70122489F2EF00146BA1 /* YHPickerCollectionCell.swift */,
+				F83F70132489F2EF00146BA1 /* YHGroupingListController.swift */,
+				F83F70142489F2EF00146BA1 /* YHPreviewController.swift */,
 			);
 			path = YHPhotoSelector;
 			sourceTree = "<group>";
@@ -274,8 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				046628C9224C634A0053FB8F /* LaunchScreen.storyboard in Resources */,
-				04662904224C6DFA0053FB8F /* YHPhotoSelector.bundle in Resources */,
 				046628C6224C634A0053FB8F /* Assets.xcassets in Resources */,
+				F83F70182489F2EF00146BA1 /* YHPhotoSelector.bundle in Resources */,
 				046628C4224C63490053FB8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,17 +301,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046628F4224C63A50053FB8F /* YHSelectConfig.swift in Sources */,
-				DC3496502303A0EF0062C8D0 /* YHPermissionRequest.swift in Sources */,
-				046628F7224C63A50053FB8F /* YHPickerViewController.swift in Sources */,
-				DC3496522303A2E90062C8D0 /* YHPhotoSelector.swift in Sources */,
+				F83F70152489F2EF00146BA1 /* YHSelectConfig.swift in Sources */,
+				F83F701C2489F2EF00146BA1 /* YHPickerCollectionCell.swift in Sources */,
+				F83F70192489F2EF00146BA1 /* YHPreviewCollectionCell.swift in Sources */,
 				046628C1224C63490053FB8F /* ViewController.swift in Sources */,
-				046628F8224C63A50053FB8F /* YHPickerCollectionCell.swift in Sources */,
-				046628F6224C63A50053FB8F /* YHPreviewCollectionCell.swift in Sources */,
-				046628F9224C63A50053FB8F /* YHGroupingListController.swift in Sources */,
 				046628BF224C63490053FB8F /* AppDelegate.swift in Sources */,
-				046628FA224C63A50053FB8F /* YHPreviewController.swift in Sources */,
-				046628F5224C63A50053FB8F /* YHGroupingCell.swift in Sources */,
+				F83F70162489F2EF00146BA1 /* YHPermissionRequest.swift in Sources */,
+				F83F701B2489F2EF00146BA1 /* YHPickerViewController.swift in Sources */,
+				F83F701A2489F2EF00146BA1 /* YHPhotoSelector.swift in Sources */,
+				F83F701E2489F2EF00146BA1 /* YHPreviewController.swift in Sources */,
+				F83F70172489F2EF00146BA1 /* YHGroupingCell.swift in Sources */,
+				F83F701D2489F2EF00146BA1 /* YHGroupingListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

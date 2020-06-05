@@ -17,6 +17,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate = self
         return tableView
     }()
+    
+    lazy var navigation: UINavigationController = {
+        let yhGroupingListController = YHGroupingListController.init()
+        yhGroupingListController.delegate = self
+        yhGroupingListController.selectIndex = 5
+        yhGroupingListController.selectenum = .photo
+        let navigation = UINavigationController.init(rootViewController: yhGroupingListController)
+        navigation.modalPresentationStyle = .overFullScreen
+        return navigation
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,25 +54,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        yh_SelectPhotoVideo()
-    }
-
-
-    public func yh_SelectPhotoVideo() {
-
-        let yhGroupingListController = YHGroupingListController.init()
-        yhGroupingListController.delegate = self
-        yhGroupingListController.selectIndex = 5
-        yhGroupingListController.selectenum = .photo
-
-        present(UINavigationController.init(rootViewController: yhGroupingListController), animated: true) {
+        present(navigation, animated: true) {
 
         }
-        
     }
 
+}
+
+// MARK: - GroupingListDelegate
+extension ViewController {
+    
     func selectVideoPhoto(select: [PHAsset]) {
         print("已选中的照片==\(select.count)张")
     }
-
+    
 }
