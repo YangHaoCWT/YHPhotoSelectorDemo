@@ -7,7 +7,7 @@ A multi - choice picture and video selector, super lightweight pure Siwft implem
 
 ## <a id="Renderings"></a>Renderings
 
-![Simulator Screen Shot - iPhone X - 2020-06-05 at 13 17 32](https://user-images.githubusercontent.com/20283075/83845081-c8fa2580-a73a-11ea-96db-1cb8a65337e4.png)![Simulator Screen Shot - iPhone X - 2020-06-05 at 13 17 34](https://user-images.githubusercontent.com/20283075/83845177-ee872f00-a73a-11ea-927b-71ebfdb74737.png)
+![Simulator Screen Shot - iPhone X - 2020-06-05 at 13 17 32](https://user-images.githubusercontent.com/20283075/83846491-4030b900-a73d-11ea-88b8-cae88b194314.png)![Simulator Screen Shot - iPhone X - 2020-06-05 at 13 17 34](https://user-images.githubusercontent.com/20283075/83845177-ee872f00-a73a-11ea-927b-71ebfdb74737.png)
 
 ![Simulator Screen Shot - iPhone X - 2020-06-05 at 13 17 37](https://user-images.githubusercontent.com/20283075/83845232-06f74980-a73b-11ea-9993-5109b5b61c6d.png)
 ![Simulator Screen Shot - iPhone X - 2020-06-05 at 13 17 45](https://user-images.githubusercontent.com/20283075/83845254-16769280-a73b-11ea-8ed5-358429069867.png)
