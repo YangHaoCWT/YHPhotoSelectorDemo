@@ -1,5 +1,5 @@
 # YHPhotoSelectorDemo
-一个支持多选的图片和视频选择器，超轻量级纯Siwft实现     
+一个支持多选的图片和视频选择器，超轻量级纯Swift实现     
 A multi - choice picture and video selector, super lightweight pure Siwft implementation
 
 ## Requirements
